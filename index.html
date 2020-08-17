@@ -9,6 +9,7 @@
 		body {
 			background-color: white;
 			--number: 30px;
+			--heightt: 120px;
 		}
 
 		.text {
@@ -44,8 +45,8 @@
 			position: fixed;
 			top: 0px;
 			width: 100%;
-			padding-bottom: var(--number);
-			padding-top: var(--number);
+			padding-bottom: calc(var(--heightt)/4);
+			padding-top: calc(var(--heightt)/4);
 			left: 0px;
 		}
 
@@ -65,7 +66,7 @@
 		}
 
 		#logo {
-			height: 120px;
+			height: var(--heightt);
 			position: fixed;
 			top: 10px;
 			right: var(--number);
