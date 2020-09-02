@@ -1,216 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>myCodingNotes</title>
-
-
+	<title>hi</title>
 
 	<style type="text/css">
-		
-		/* 
-			colour A:
-				pink
-					rgb(250, 180, 232);
-					#fab4e8
+	
 
-			colour B:
-				purple
-					rgb(183, 148, 214);	
-					#b794d6
+		body {
+			background-color: white;
+			--number: 30px;
+			--heightt: 120px;
+		}
 
-			colour C:
-				indigo
-					rgb(155, 161, 235);
-					#9ba1eb
-
-			colour D:
-				blue
-					rgb(152, 194, 217);
-					#98c2d9
-
-			colour E:
-				turquoise
-					rgb(186, 247, 232);
-					#baf7e8
-		*/		
+		.text {
+			color: rgb(39, 81, 184);
+			padding-left: 2%;
+			width: 60%;
+			font-size: 30px;
+			padding-top: 12%;
+		}
 
 
 
-		body:not(.explain) {
-			margin-top: 4em;
-			
+		.can {
+			color: rgb(39, 81, 184);
+			width: 80%;
+			font-size: 30px;
+			text-align: right;
+			float: right;
+			padding-right: 50px;
+
+
+		}
+
+
+		h1 {
+			color: rgb(39, 81, 184);
 			font-family: monospace;
-			font-weight: bold;
-			font-size: 15px;
-
-			background-color: var(--cC);
-			color: var(--cB);	
-
-
-
-		/* VARIABLES */
-
-			--squareY: 60%;
-			--squareX: 45%;
-
-			--squareH: 20%;
-			--squareW: 20%;
-
-
-			--cA : #fab4e8;
-			--cB: #b794d6;
-			--cC: #9ba1eb;
-			--cD: #98c2d9;
-			--cE: #baf7e8;
 		}
 
+		#topbar {
+			background-color: rgb(201, 0, 44);
+			padding: 20px;
+			position: fixed;
+			top: 0px;
+			width: 100%;
+			padding-bottom: calc(var(--heightt)/4);
+			padding-top: calc(var(--heightt)/4);
+			left: 0px;
+		}
 
-		.explain {
-			margin-top: -0.75em;
-			text-indent: 1em;
+		a:link {
+			color: rgb(0, 120, 220);
+		}
+
+		a:hover {
+			color: rgb(39, 81, 184);
+		}
+
+		.toptext {
+			color: red;
+			float: left;
+
 
 		}
 
+		#logo {
+			height: var(--heightt);
+			position: fixed;
+			top: 10px;
+			right: var(--number);
 
-		#text {
-			padding: 30px;
-			margin: 90px; 
-
-			border-style: hidden hidden hidden solid;
-			border-color: var(--cD);
-			border-width: 15px;
-			background-color: var(--cE);
 		}
 
 
-		#squareOne {
-			left: calc(var(--squareX) - 43%);
-			top: calc(var(--squareY) + 10%);
 
-			border-radius: 20% 35%;   
-			transform: rotate(7deg);
-				
-			background-color: var(--cA);
-			box-shadow: -7px 7px var(--cB);
+		#dog {
+			float: right;
+			width: 20%;
+
+			margin-top: -225px;
+
+
 		}
 
 
-		#squareTwo {
-			left: calc(var(--squareX) + 37%);
-			top: calc(var(--squareY) + 1%);
 
-			height: calc(var(--squareH) + 5%);
-			width: calc(var(--squareW) - 4%);
-
-			border-radius: 10%;
-			transform: rotate(-17deg);
-						
-			background-color: var(--cA);
-			box-shadow: -7px 7px var(--cB);
-		}
-
-
-		#squareThree {
-			left: calc(var(--squareX) + 31%);
-			top: calc(var(--squareY) + 13%);
-
-			height: calc(var(--squareH) - 1%);
-			width: calc(var(--squareW) - 5%);
-
-			border-radius: 40%;
-			transform: rotate(-5deg);
-					
-			background-color: var(--cE);
-			box-shadow: -7px 7px var(--cD);
-		}
-
-
-		.squareDefault {
-			position: absolute;
-			left: var(--squareX);
-			top: var(--squareY);
-
-			height: var(--squareH);
-			width: var(--squareW);
-		}
-
-
-		.title {
-			position: absolute;
-			top: 70.5%;
-			left: 5.5%;
-
-			transform: rotate(9deg);
-
-			text-align: center;
-			color: var(--cD);
-		}
-
-			
-		
 
 	</style>
 </head>
 <body>
 
-	<div id="text">
-		<p>
-			Function - Block of code that you've defined (like a variable) so that you can use it again and again.
-		</p>
-		
-
-		<p>
-			Parameter - Component of a function, used to pass (assign) values to variables inside of its function.
-		</p>
-		
-
-		<p>	
-			String - idk lol it's like text or something
-		</p>	
-		
-
-		<p>
-			Boolean - Can only be either true or false.
-		</p>	
 
 
-		<p>
-			Argument - The number of variables passed in function parameters. 
-		</p>
+	<div id= topbar>
+		<h1>
+		All about Pepsi (or something idk filler text i guess)
 
-		<p class="explain">
-			The "x" and the "y" in "function (x, y,)" 
-		</p>
-
-		<p>
-			Array - Like a variable, but lets you store multiple values in a single variable.
-		</p>
-
-
-		<p class="explain">
-			Kind of like a category, or a drawer with multiple values in them.
-		</p>
-
-
-		<p>
-			Object - i forgot
-		</p>
+		</h1>
 	</div>
 
 
-	<div class="squareDefault", id="squareOne"> </div>
-
-	<div class="squareDefault", id="squareTwo"> </div>
-
-	<div class="squareDefault", id="squareThree"> </div>
 
 
-	<div class="squareDefault"> </div> 
-	-->
+	<p class="text">
+		Pepsi is a carbonated soft drink manufactured by PepsiCo. Originally created and developed in 1893 by Caleb Bradham and introduced as Brad's Drink, it was renamed as Pepsi-Cola in 1898, and then shortened to Pepsi in 1961. <a href="https://en.wikipedia.org/wiki/Pepsi"> [Wikipedia] </a>
+	</p>
 
-	<h2 class="title">
-		Javascript <br> Terminology!
-	</h2>
+	<img id="dog"src="https://i5.walmartimages.com/asr/68600fb3-d857-4a2d-9fe1-b635a82b27c2_1.55420b10672b613f15c1c96ae87bcdd3.jpeg">
+
+
+	<img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Pepsi_logo_2014.svg/1200px-Pepsi_logo_2014.svg.png">
+
+	<br>
+	<br>
+
+	<p class="can"> a can of pepsi</p>
+
+	<p> v1</p>
 
 </body>
-</html> 
+</html>
